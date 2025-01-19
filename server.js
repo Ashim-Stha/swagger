@@ -41,10 +41,6 @@ app.delete("/items/:id", (req, res) => {
 //Swagger UI setup
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 app.listen(PORT, () => {
   console.log("object");
 });
